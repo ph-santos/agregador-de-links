@@ -17,6 +17,24 @@ body {
 main {
     max-width: 580px;
     margin: auto;
+    margin-top: 32px;
+    
+    display: grid;
+    gap: 24px;
+}
+
+section {
+    background-image: linear-gradient(90deg, #9572FC 0%, #43E7AD 50.52%, #E2D45C 100%);
+    padding-top: 4px;
+    border-radius: 10px;
+
+
+}
+
+section div {
+    background: #2A2634;
+    border-radius: 8px;
+    padding: 24px 32px 32px 32px;
 }
 
 section h2 {
@@ -25,9 +43,26 @@ section h2 {
 }
 
 section p {
-    
+    color: #A1A1AA;
+    line-height: 160%;
+    letter-spacing: -0.18px;
 }
 
-ul {
+section ul {
     list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+
+    margin-top: 24px;
+}
+
+.game-list img {
+    width: 90px;
+    border-radius: 8px;
+}
+
+.streamers-list  img {
+    width: 70px;
+    border-radius: 50%;
 }
