@@ -14,11 +14,36 @@ body {
     font-family: 'Inter', sans-serif;
 }
 
+header {
+    padding-top: 32px;
+    height: calc(120px + 32px);
+}
+
+header div {
+    width: 120px;
+    margin: auto;
+    transition: transform .2s;
+}
+
+header div:hover {
+    transform: scale(1.1); 
+}
+
+header div a {
+    background-image: linear-gradient(90deg, #9572FC 0%, #43E7AD 50.52%, #E2D45C 100%);
+    border-radius: 50%;
+    display: flex;
+    padding: 4px;
+}
+
+header div img {
+    width: 100%;
+    border-radius: 50%;
+}
+
 main {
     max-width: 580px;
-    margin: auto;
-    margin-top: 32px;
-    
+    margin: 32px auto;
     display: grid;
     gap: 24px;
 }
@@ -60,16 +85,84 @@ section ul {
 .game-list img {
     width: 90px;
     border-radius: 8px;
+    transition: transform 0.2s, box-shadow 0.2s;
 }
 
 .streamers-list  img {
     width: 70px;
     border-radius: 50%;
+    border: 1px solid #443E54;
+    transition: transform 0.2s, border 0.1s, box-shadow 0.2s;
 }
 
 ul img:hover {
-    border: 2px solid rgba(255, 255, 255, 0.699);
     transform: translate(-3px, -3px);
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.527);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.315);
+    
+}
+
+.streamers-list img:hover {
+    border: 2px solid rgba(255, 255, 255, 0.603);
+    transform: translate(-3px, -3px);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.315);
+    
+}
+
+ul svg {
     transition: transform 0.2s, border 0.1s;
+}
+
+ul svg:hover {
+    transform: translate(-3px, -3px);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.534);
+   
+}
+
+
+/* Animation */
+
+/* Para colocar uma animação nos vamos colocaro o @keyframes e depois algum nome que agente excolher */
+header div {
+    animation: fromTop .7s .2s backwards;
+    /* Primeiro nós vamos colocar o nome da animação o tempo dela e depois o delay */
+}
+
+main section {
+    animation: fromBottom .7s .2s backwards;
+}
+
+main section:nth-child(1) {
+    animation-delay: 0;
+}
+
+main section:nth-child(2) {
+    animation-delay: .3s;
+}
+
+main section:nth-child(3) {
+    animation-delay: .6s;
+}
+
+@keyframes fromTop { 
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0)
+    }
+}
+
+@keyframes fromBottom {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0)
+    }
 }
