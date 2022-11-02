@@ -14,9 +14,9 @@ Esse projeto consiste em um agregador de links que te redireciona para as lives 
 ![Web 1](https://github.com/ph-santos/agregador-de-links/blob/main/assets/images/img-pc.png)
 
 
+# Tecnologias utilizadas
 ## Front end
-- HTML / CSS 
-
+- HTML / CSS / JS / TypeScript
 
 # Autor
 
