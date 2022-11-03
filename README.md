@@ -16,7 +16,7 @@ Esse projeto consiste em um agregador de links que te redireciona para as lives 
 
 # Tecnologias utilizadas
 ## Front end
-- HTML / CSS / JS / TypeScript
+- HTML / CSS 
 
 # Autor
 
